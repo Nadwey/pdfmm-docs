@@ -112,16 +112,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ad0c81743bb77c22d9163c235e6ed8332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada61c0914f512eb5cdd0dd233a13b5c0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfEncodingMap.html#ada61c0914f512eb5cdd0dd233a13b5c0">getExportObject</a> (<a class="el" href="classmm_1_1PdfIndirectObjectList.html">PdfIndirectObjectList</a> &amp;objects, <a class="el" href="classmm_1_1PdfName.html">PdfName</a> &amp;name, <a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> *&amp;obj) const</td></tr>
 <tr class="separator:ada61c0914f512eb5cdd0dd233a13b5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade91b7df3e89446702fc35ed0ebdd5df"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfEncodingMap.html#ade91b7df3e89446702fc35ed0ebdd5df">AppendToUnicodeEntries</a> (<a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> &amp;stream) const =0</td></tr>
-<tr class="separator:ade91b7df3e89446702fc35ed0ebdd5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a706fe126345a5daede61e1b5f90ca791"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfEncodingMap.html#a706fe126345a5daede61e1b5f90ca791">AppendCIDMappingEntries</a> (<a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> &amp;stream, const <a class="el" href="classmm_1_1PdfFont.html">PdfFont</a> &amp;font) const =0</td></tr>
-<tr class="separator:a706fe126345a5daede61e1b5f90ca791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7406d9b1a7ebc9f6f2ceccf0f20ed901"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfEncodingMap.html#a7406d9b1a7ebc9f6f2ceccf0f20ed901">AppendToUnicodeEntries</a> (<a class="el" href="classmm_1_1OutputStream.html">OutputStream</a> &amp;stream, charbuff &amp;temp) const =0</td></tr>
+<tr class="separator:a7406d9b1a7ebc9f6f2ceccf0f20ed901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f8918d6e24dbecb2aa7d1755fb8c14"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfEncodingMap.html#ac9f8918d6e24dbecb2aa7d1755fb8c14">AppendCIDMappingEntries</a> (<a class="el" href="classmm_1_1OutputStream.html">OutputStream</a> &amp;stream, const <a class="el" href="classmm_1_1PdfFont.html">PdfFont</a> &amp;font, charbuff &amp;temp) const =0</td></tr>
+<tr class="separator:ac9f8918d6e24dbecb2aa7d1755fb8c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A <a class="el" href="classmm_1_1PdfEncodingMap.html">PdfEncodingMap</a> is a low level interface to convert between utf8 and encoded strings in and to determine correct CID mapping </p><dl class="section remark"><dt>Remarks</dt><dd>Prefer using <a class="el" href="classmm_1_1PdfEncoding.html">PdfEncoding</a> methods instead: don't use this class directly unless you know what you are doing </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a706fe126345a5daede61e1b5f90ca791" name="a706fe126345a5daede61e1b5f90ca791"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a706fe126345a5daede61e1b5f90ca791">&#9670;&nbsp;</a></span>AppendCIDMappingEntries()</h2>
+<a id="ac9f8918d6e24dbecb2aa7d1755fb8c14" name="ac9f8918d6e24dbecb2aa7d1755fb8c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f8918d6e24dbecb2aa7d1755fb8c14">&#9670;&nbsp;</a></span>AppendCIDMappingEntries()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,14 +132,20 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void mm::PdfEncodingMap::AppendCIDMappingEntries </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classmm_1_1OutputStream.html">OutputStream</a> &amp;&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classmm_1_1PdfFont.html">PdfFont</a> &amp;&#160;</td>
-          <td class="paramname"><em>font</em>&#160;</td>
+          <td class="paramname"><em>font</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">charbuff &amp;&#160;</td>
+          <td class="paramname"><em>temp</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -156,12 +162,12 @@ Protected Member Functions</h2></td></tr>
 <p >During a PdfEncoding::ExportToFont() append "begincidchar" and/or "begincidrange" entries. See Adobe tecnichal notes #5014\</p>
 <p >To be called by <a class="el" href="classmm_1_1PdfEncoding.html">PdfEncoding</a> </p>
 
-<p>Implemented in <a class="el" href="classmm_1_1PdfEncodingMapBase.html#ab468f4fa480d51c180012688b8cdbac6">mm::PdfEncodingMapBase</a>, <a class="el" href="classmm_1_1PdfEncodingMapOneByte.html#adc238c4321a59dc8300dcdcf19f54489">mm::PdfEncodingMapOneByte</a>, <a class="el" href="classmm_1_1PdfNullEncodingMap.html#ab4006cff7a845a50f1e0ddba91d824b1">mm::PdfNullEncodingMap</a>, and <a class="el" href="classmm_1_1PdfIdentityEncoding.html#a8734d5c292ee546bb409b88ac967ab89">mm::PdfIdentityEncoding</a>.</p>
+<p>Implemented in <a class="el" href="classmm_1_1PdfEncodingMapBase.html#a8069daf19ef3b6768e3999e9a2da59f8">mm::PdfEncodingMapBase</a>, <a class="el" href="classmm_1_1PdfEncodingMapOneByte.html#a82d98c1f6c02fe7252e85f624cc07e4a">mm::PdfEncodingMapOneByte</a>, <a class="el" href="classmm_1_1PdfNullEncodingMap.html#abff1a2eb2c1987d3ba3945700be1dd71">mm::PdfNullEncodingMap</a>, and <a class="el" href="classmm_1_1PdfIdentityEncoding.html#a197c906c33e0197755785739026db923">mm::PdfIdentityEncoding</a>.</p>
 
 </div>
 </div>
-<a id="ade91b7df3e89446702fc35ed0ebdd5df" name="ade91b7df3e89446702fc35ed0ebdd5df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade91b7df3e89446702fc35ed0ebdd5df">&#9670;&nbsp;</a></span>AppendToUnicodeEntries()</h2>
+<a id="a7406d9b1a7ebc9f6f2ceccf0f20ed901" name="a7406d9b1a7ebc9f6f2ceccf0f20ed901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7406d9b1a7ebc9f6f2ceccf0f20ed901">&#9670;&nbsp;</a></span>AppendToUnicodeEntries()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,9 +178,19 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void mm::PdfEncodingMap::AppendToUnicodeEntries </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> &amp;&#160;</td>
-          <td class="paramname"><em>stream</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="classmm_1_1OutputStream.html">OutputStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">charbuff &amp;&#160;</td>
+          <td class="paramname"><em>temp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -186,7 +202,7 @@ Protected Member Functions</h2></td></tr>
 <p >During a WriteToUnicodeCMap append "beginbfchar" and "beginbfrange" entries. "bf" stands for Base Font, see Adobe tecnichal notes #5014</p>
 <p >To be called by <a class="el" href="classmm_1_1PdfEncoding.html">PdfEncoding</a> </p>
 
-<p>Implemented in <a class="el" href="classmm_1_1PdfEncodingMapBase.html#ab620016f918a3e09530817b9f2ea5cd8">mm::PdfEncodingMapBase</a>, <a class="el" href="classmm_1_1PdfEncodingMapOneByte.html#a47d73125d46fb4d8cd1c5ea3fecaff70">mm::PdfEncodingMapOneByte</a>, <a class="el" href="classmm_1_1PdfNullEncodingMap.html#a623a572f7172ca078f780b51a4533184">mm::PdfNullEncodingMap</a>, and <a class="el" href="classmm_1_1PdfIdentityEncoding.html#a95920bc4f0f77f5a99d9e68e346ac07c">mm::PdfIdentityEncoding</a>.</p>
+<p>Implemented in <a class="el" href="classmm_1_1PdfEncodingMapBase.html#a7a8687101764f6b52104d2bf161b44b1">mm::PdfEncodingMapBase</a>, <a class="el" href="classmm_1_1PdfEncodingMapOneByte.html#a6e62cbaf5e9cbf17719f9efceafc57d2">mm::PdfEncodingMapOneByte</a>, <a class="el" href="classmm_1_1PdfNullEncodingMap.html#a673b10394e9434de7bc25aca8fc35921">mm::PdfNullEncodingMap</a>, and <a class="el" href="classmm_1_1PdfIdentityEncoding.html#afb6300ccbcfc07391571361f72a24653">mm::PdfIdentityEncoding</a>.</p>
 
 </div>
 </div>
@@ -765,7 +781,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 14 2022 00:41:04 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 21 2022 00:38:05 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
