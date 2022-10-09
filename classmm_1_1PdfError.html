@@ -52,6 +52,8 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;PdfError.h&gt;</code></p>
+
+<p>Inherits std::exception.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -75,23 +77,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab4a4227df3b2c51888d3e346b930df81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c934ac321353745380caf106649bc47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#a8c934ac321353745380caf106649bc47">PrintErrorMsg</a> () const</td></tr>
 <tr class="separator:a8c934ac321353745380caf106649bc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f2e783b5c4e5f7869855ce40b1eb63"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#a69f2e783b5c4e5f7869855ce40b1eb63">what</a> () const</td></tr>
-<tr class="separator:a69f2e783b5c4e5f7869855ce40b1eb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6358a285db481e31fa49e02d6947298c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#a6358a285db481e31fa49e02d6947298c">what</a> () const noexcept override</td></tr>
+<tr class="separator:a6358a285db481e31fa49e02d6947298c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6058bfeb5dc0aa4b4bcb0f9baf913145"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#a6058bfeb5dc0aa4b4bcb0f9baf913145">SetLogMessageCallback</a> (const LogMessageCallback &amp;logMessageCallback)</td></tr>
-<tr class="separator:a6058bfeb5dc0aa4b4bcb0f9baf913145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fe6d527865d9832e57cef4811f6ec2f"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#a5fe6d527865d9832e57cef4811f6ec2f">ErrorName</a> (<a class="el" href="namespacemm.html#a7643c27ef4fe17027a9267b926d27caa">PdfErrorCode</a> code)</td></tr>
-<tr class="separator:a5fe6d527865d9832e57cef4811f6ec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77234689ff0b5bc1de2fdd58b490b5d4"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#a77234689ff0b5bc1de2fdd58b490b5d4">ErrorMessage</a> (<a class="el" href="namespacemm.html#a7643c27ef4fe17027a9267b926d27caa">PdfErrorCode</a> code)</td></tr>
-<tr class="separator:a77234689ff0b5bc1de2fdd58b490b5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab0d54a3a527c0e6647f2677e21d700d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#aab0d54a3a527c0e6647f2677e21d700d">SetMaxLoggingSeverity</a> (<a class="el" href="namespacemm.html#abd0d60361517cdaeaa29a3d6188795fe">PdfLogSeverity</a> logSeverity)</td></tr>
-<tr class="separator:aab0d54a3a527c0e6647f2677e21d700d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e281f15cf619b374c2c6db8097fe3b0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacemm.html#abd0d60361517cdaeaa29a3d6188795fe">PdfLogSeverity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#a9e281f15cf619b374c2c6db8097fe3b0">GetMaxLoggingSeverity</a> ()</td></tr>
-<tr class="separator:a9e281f15cf619b374c2c6db8097fe3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af09b0d40e299c3fb6ff058e983f2c753"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#af09b0d40e299c3fb6ff058e983f2c753">IsLoggingSeverityEnabled</a> (<a class="el" href="namespacemm.html#abd0d60361517cdaeaa29a3d6188795fe">PdfLogSeverity</a> logSeverity)</td></tr>
-<tr class="separator:af09b0d40e299c3fb6ff058e983f2c753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f739afeef70f5f19f53d95d8f0a871"><td class="memItemLeft" align="right" valign="top">static std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#a70f739afeef70f5f19f53d95d8f0a871">ErrorName</a> (<a class="el" href="namespacemm.html#a7643c27ef4fe17027a9267b926d27caa">PdfErrorCode</a> code)</td></tr>
+<tr class="separator:a70f739afeef70f5f19f53d95d8f0a871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e634721b50e9cf30a1ec74bfe1e071"><td class="memItemLeft" align="right" valign="top">static std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfError.html#a84e634721b50e9cf30a1ec74bfe1e071">ErrorMessage</a> (<a class="el" href="namespacemm.html#a7643c27ef4fe17027a9267b926d27caa">PdfErrorCode</a> code)</td></tr>
+<tr class="separator:a84e634721b50e9cf30a1ec74bfe1e071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The error handling class of the pdfmm library. If a method encounters an error, a <a class="el" href="classmm_1_1PdfError.html">PdfError</a> object is thrown as a C++ exception.</p>
@@ -223,8 +217,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a77234689ff0b5bc1de2fdd58b490b5d4" name="a77234689ff0b5bc1de2fdd58b490b5d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77234689ff0b5bc1de2fdd58b490b5d4">&#9670;&nbsp;</a></span>ErrorMessage()</h2>
+<a id="a84e634721b50e9cf30a1ec74bfe1e071" name="a84e634721b50e9cf30a1ec74bfe1e071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e634721b50e9cf30a1ec74bfe1e071">&#9670;&nbsp;</a></span>ErrorMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,7 +227,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char * PdfError::ErrorMessage </td>
+          <td class="memname">string_view PdfError::ErrorMessage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacemm.html#a7643c27ef4fe17027a9267b926d27caa">PdfErrorCode</a>&#160;</td>
           <td class="paramname"><em>code</em></td><td>)</td>
@@ -250,8 +244,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5fe6d527865d9832e57cef4811f6ec2f" name="a5fe6d527865d9832e57cef4811f6ec2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fe6d527865d9832e57cef4811f6ec2f">&#9670;&nbsp;</a></span>ErrorName()</h2>
+<a id="a70f739afeef70f5f19f53d95d8f0a871" name="a70f739afeef70f5f19f53d95d8f0a871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f739afeef70f5f19f53d95d8f0a871">&#9670;&nbsp;</a></span>ErrorName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +254,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char * PdfError::ErrorName </td>
+          <td class="memname">string_view PdfError::ErrorName </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacemm.html#a7643c27ef4fe17027a9267b926d27caa">PdfErrorCode</a>&#160;</td>
           <td class="paramname"><em>code</em></td><td>)</td>
@@ -331,59 +325,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Return the error code of this object. </p><dl class="section return"><dt>Returns</dt><dd>the error code of this object </dd></dl>
-
-</div>
-</div>
-<a id="a9e281f15cf619b374c2c6db8097fe3b0" name="a9e281f15cf619b374c2c6db8097fe3b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e281f15cf619b374c2c6db8097fe3b0">&#9670;&nbsp;</a></span>GetMaxLoggingSeverity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacemm.html#abd0d60361517cdaeaa29a3d6188795fe">PdfLogSeverity</a> PdfError::GetMaxLoggingSeverity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Get the maximum logging severity The higher the maximum (enum integral value), the more is logged </p>
-
-</div>
-</div>
-<a id="af09b0d40e299c3fb6ff058e983f2c753" name="af09b0d40e299c3fb6ff058e983f2c753"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af09b0d40e299c3fb6ff058e983f2c753">&#9670;&nbsp;</a></span>IsLoggingSeverityEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PdfError::IsLoggingSeverityEnabled </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemm.html#abd0d60361517cdaeaa29a3d6188795fe">PdfLogSeverity</a>&#160;</td>
-          <td class="paramname"><em>logSeverity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >The if the given logging severity enabled or not </p>
 
 </div>
 </div>
@@ -513,71 +454,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6058bfeb5dc0aa4b4bcb0f9baf913145" name="a6058bfeb5dc0aa4b4bcb0f9baf913145"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6058bfeb5dc0aa4b4bcb0f9baf913145">&#9670;&nbsp;</a></span>SetLogMessageCallback()</h2>
+<a id="a6358a285db481e31fa49e02d6947298c" name="a6358a285db481e31fa49e02d6947298c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6358a285db481e31fa49e02d6947298c">&#9670;&nbsp;</a></span>what()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PdfError::SetLogMessageCallback </td>
-          <td>(</td>
-          <td class="paramtype">const LogMessageCallback &amp;&#160;</td>
-          <td class="paramname"><em>logMessageCallback</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Set a global static LogMessageCallback functor to replace stderr output in LogMessageInternal. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">logMessageCallback</td><td>the pointer to the new callback functor object </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the pointer to the previous callback functor object </dd></dl>
-
-</div>
-</div>
-<a id="aab0d54a3a527c0e6647f2677e21d700d" name="aab0d54a3a527c0e6647f2677e21d700d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab0d54a3a527c0e6647f2677e21d700d">&#9670;&nbsp;</a></span>SetMaxLoggingSeverity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PdfError::SetMaxLoggingSeverity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemm.html#abd0d60361517cdaeaa29a3d6188795fe">PdfLogSeverity</a>&#160;</td>
-          <td class="paramname"><em>logSeverity</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Set the maximum logging severity. The higher the maximum (enum integral value), the more is logged </p>
-
-</div>
-</div>
-<a id="a69f2e783b5c4e5f7869855ce40b1eb63" name="a69f2e783b5c4e5f7869855ce40b1eb63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69f2e783b5c4e5f7869855ce40b1eb63">&#9670;&nbsp;</a></span>what()</h2>
-
-<div class="memitem">
-<div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">const char * PdfError::what </td>
@@ -586,6 +470,11 @@ Static Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p >Obtain error description. </p><dl class="section return"><dt>Returns</dt><dd>a C string describing the error. </dd></dl>
 
@@ -594,7 +483,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 2 2022 00:57:09 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Oct 9 2022 00:47:35 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
