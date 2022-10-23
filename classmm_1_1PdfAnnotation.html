@@ -53,13 +53,11 @@ $(function() {
 <p><code>#include &lt;PdfAnnotation.h&gt;</code></p>
 
 <p>Inherits mm::PdfDictionaryElement.</p>
+
+<p>Inherited by mm::PdfAnnotationActionBase, mm::PdfAnnotationCaret, mm::PdfAnnotationCircle, mm::PdfAnnotationFileAttachement, mm::PdfAnnotationFreeText, mm::PdfAnnotationInk, mm::PdfAnnotationLine, mm::PdfAnnotationModel3D, mm::PdfAnnotationMovie, mm::PdfAnnotationPolyLine, mm::PdfAnnotationPolygon, mm::PdfAnnotationPopup, mm::PdfAnnotationPrinterMark, mm::PdfAnnotationProjection, mm::PdfAnnotationRedact, mm::PdfAnnotationRichMedia, mm::PdfAnnotationSound, mm::PdfAnnotationSquare, mm::PdfAnnotationStamp, mm::PdfAnnotationText, mm::PdfAnnotationTextMarkupBase, mm::PdfAnnotationTrapNet, mm::PdfAnnotationWatermark, and mm::PdfAnnotationWebMedia.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a135c825515b126df81a0b1e8462963de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a135c825515b126df81a0b1e8462963de">PdfAnnotation</a> (<a class="el" href="classmm_1_1PdfPage.html">PdfPage</a> &amp;page, <a class="el" href="namespacemm.html#a8333dd886ce0a5ac7e7814606b29b0f9">PdfAnnotationType</a> annotType, const <a class="el" href="classmm_1_1PdfRect.html">PdfRect</a> &amp;rect)</td></tr>
-<tr class="separator:a135c825515b126df81a0b1e8462963de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11d6667091cb7240e51008fd05655f58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a11d6667091cb7240e51008fd05655f58">PdfAnnotation</a> (<a class="el" href="classmm_1_1PdfPage.html">PdfPage</a> &amp;page, <a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> &amp;obj)</td></tr>
-<tr class="separator:a11d6667091cb7240e51008fd05655f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92ae591f9d703896a0c98224bfb7b776"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a92ae591f9d703896a0c98224bfb7b776">SetAppearanceStream</a> (PdfXObjectForm &amp;obj, <a class="el" href="namespacemm.html#aeb5b546bb847676ac15af6b9de7f253d">PdfAppearanceType</a> appearance=<a class="el" href="namespacemm.html#aeb5b546bb847676ac15af6b9de7f253da960b44c579bc2f6818d2daaf9e4c16f0">PdfAppearanceType::Normal</a>, const <a class="el" href="classmm_1_1PdfName.html">PdfName</a> &amp;state=&quot;&quot;)</td></tr>
 <tr class="separator:a92ae591f9d703896a0c98224bfb7b776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ccace6d79b7712981b79077f9f4bb59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a8ccace6d79b7712981b79077f9f4bb59">GetAppearanceDictionaryObject</a> ()</td></tr>
@@ -86,32 +84,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a118bc8e6d34d19488ca6019f93eb3735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3ca17de57f5e4bd56416665079a48ea"><td class="memItemLeft" align="right" valign="top">nullable&lt; <a class="el" href="classmm_1_1PdfString.html">PdfString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#ae3ca17de57f5e4bd56416665079a48ea">GetContents</a> () const</td></tr>
 <tr class="separator:ae3ca17de57f5e4bd56416665079a48ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa7a72a7ea5959e286e31be4f7b03194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#aaa7a72a7ea5959e286e31be4f7b03194">SetDestination</a> (const std::shared_ptr&lt; <a class="el" href="classmm_1_1PdfDestination.html">PdfDestination</a> &gt; &amp;destination)</td></tr>
-<tr class="separator:aaa7a72a7ea5959e286e31be4f7b03194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdf8992aed54beecbdb127bfc2beb50b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classmm_1_1PdfDestination.html">PdfDestination</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#abdf8992aed54beecbdb127bfc2beb50b">GetDestination</a> () const</td></tr>
-<tr class="separator:abdf8992aed54beecbdb127bfc2beb50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e384c08bebd9a2f3c2de8fb08824a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a73e384c08bebd9a2f3c2de8fb08824a7">HasDestination</a> () const</td></tr>
-<tr class="separator:a73e384c08bebd9a2f3c2de8fb08824a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dcb2052584b1f6ce39802583062b852"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a5dcb2052584b1f6ce39802583062b852">SetAction</a> (const std::shared_ptr&lt; <a class="el" href="classmm_1_1PdfAction.html">PdfAction</a> &gt; &amp;action)</td></tr>
-<tr class="separator:a5dcb2052584b1f6ce39802583062b852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11f5435922be5a1e08391c3f562cc39b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classmm_1_1PdfAction.html">PdfAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a11f5435922be5a1e08391c3f562cc39b">GetAction</a> () const</td></tr>
-<tr class="separator:a11f5435922be5a1e08391c3f562cc39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3dba297e61771e4f205439211dada88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#ac3dba297e61771e4f205439211dada88">HasAction</a> () const</td></tr>
-<tr class="separator:ac3dba297e61771e4f205439211dada88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50fc664713c9dbd2470954f3015d328e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a50fc664713c9dbd2470954f3015d328e">SetOpen</a> (bool b)</td></tr>
-<tr class="separator:a50fc664713c9dbd2470954f3015d328e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d42b6a07352cc85899955ad92029da1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a9d42b6a07352cc85899955ad92029da1">GetOpen</a> () const</td></tr>
-<tr class="separator:a9d42b6a07352cc85899955ad92029da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa4822838611e04df0dcad5163c909c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#adfa4822838611e04df0dcad5163c909c">HasFileAttachement</a> () const</td></tr>
-<tr class="separator:adfa4822838611e04df0dcad5163c909c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed4e74a538f920ea080945f51132e9cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#aed4e74a538f920ea080945f51132e9cc">SetFileAttachement</a> (const std::shared_ptr&lt; <a class="el" href="classmm_1_1PdfFileSpec.html">PdfFileSpec</a> &gt; &amp;fileSpec)</td></tr>
-<tr class="separator:aed4e74a538f920ea080945f51132e9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac774532a599777bef4cbce27dd8bb275"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classmm_1_1PdfFileSpec.html">PdfFileSpec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#ac774532a599777bef4cbce27dd8bb275">GetFileAttachement</a> () const</td></tr>
-<tr class="separator:ac774532a599777bef4cbce27dd8bb275"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a973f00d42acbf7b27a3aad020ddbe181"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmm_1_1PdfArray.html">PdfArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a973f00d42acbf7b27a3aad020ddbe181">GetQuadPoints</a> () const</td></tr>
-<tr class="separator:a973f00d42acbf7b27a3aad020ddbe181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43515bedff52f72e39c0b5ec5c639f33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a43515bedff52f72e39c0b5ec5c639f33">SetQuadPoints</a> (const <a class="el" href="classmm_1_1PdfArray.html">PdfArray</a> &amp;quadPoints)</td></tr>
-<tr class="separator:a43515bedff52f72e39c0b5ec5c639f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e47e3cbbc02d34fbe850cc6f005b83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmm_1_1PdfArray.html">PdfArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#a39e47e3cbbc02d34fbe850cc6f005b83">GetColor</a> () const</td></tr>
 <tr class="separator:a39e47e3cbbc02d34fbe850cc6f005b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae55361e5960ad11490ff18b449222982"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfAnnotation.html#ae55361e5960ad11490ff18b449222982">SetColor</a> (double r, double g, double b)</td></tr>
@@ -128,110 +100,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac9c14d06bded50fdeed98c66da32e92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >An annotation to a <a class="el" href="classmm_1_1PdfPage.html">PdfPage</a> To create an annotation use <a class="el" href="classmm_1_1PdfPage.html#a6296980397eba3a1eb9c3423769432e6">PdfPage::CreateAnnotation</a></p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfPage.html#a6296980397eba3a1eb9c3423769432e6">PdfPage::CreateAnnotation</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a135c825515b126df81a0b1e8462963de" name="a135c825515b126df81a0b1e8462963de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a135c825515b126df81a0b1e8462963de">&#9670;&nbsp;</a></span>PdfAnnotation() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PdfAnnotation::PdfAnnotation </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmm_1_1PdfPage.html">PdfPage</a> &amp;&#160;</td>
-          <td class="paramname"><em>page</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemm.html#a8333dd886ce0a5ac7e7814606b29b0f9">PdfAnnotationType</a>&#160;</td>
-          <td class="paramname"><em>annotType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classmm_1_1PdfRect.html">PdfRect</a> &amp;&#160;</td>
-          <td class="paramname"><em>rect</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Create a new annotation object</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">page</td><td>the parent page of this annotation </td></tr>
-    <tr><td class="paramname">eAnnot</td><td>type of the annotation </td></tr>
-    <tr><td class="paramname">rect</td><td>the rectangle in which the annotation will appear on the page </td></tr>
-    <tr><td class="paramname">parent</td><td>parent of this annotation</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfPage.html#a6296980397eba3a1eb9c3423769432e6">PdfPage::CreateAnnotation</a> </dd></dl>
-
-</div>
-</div>
-<a id="a11d6667091cb7240e51008fd05655f58" name="a11d6667091cb7240e51008fd05655f58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11d6667091cb7240e51008fd05655f58">&#9670;&nbsp;</a></span>PdfAnnotation() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PdfAnnotation::PdfAnnotation </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmm_1_1PdfPage.html">PdfPage</a> &amp;&#160;</td>
-          <td class="paramname"><em>page</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> &amp;&#160;</td>
-          <td class="paramname"><em>obj</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Create a <a class="el" href="classmm_1_1PdfAnnotation.html">PdfAnnotation</a> from an existing object</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">obj</td><td>the annotations object </td></tr>
-    <tr><td class="paramname">page</td><td>the page of the annotation </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a11f5435922be5a1e08391c3f562cc39b" name="a11f5435922be5a1e08391c3f562cc39b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11f5435922be5a1e08391c3f562cc39b">&#9670;&nbsp;</a></span>GetAction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">shared_ptr&lt; <a class="el" href="classmm_1_1PdfAction.html">PdfAction</a> &gt; PdfAnnotation::GetAction </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Get the action that is executed for this annotation </p><dl class="section return"><dt>Returns</dt><dd>an action object. The action object is owned by the <a class="el" href="classmm_1_1PdfAnnotation.html">PdfAnnotation</a>.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfAnnotation.html#a5dcb2052584b1f6ce39802583062b852">SetAction</a> </dd></dl>
-
-</div>
-</div>
+<div class="textblock"><p >An annotation to a <a class="el" href="classmm_1_1PdfPage.html">PdfPage</a> To create an annotation use <a class="el" href="classmm_1_1PdfPage.html#a2e77044b48edd0d1a580e8a5c25a3636">PdfPage::CreateAnnotation</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfPage.html#a2e77044b48edd0d1a580e8a5c25a3636">PdfPage::CreateAnnotation</a> </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8ccace6d79b7712981b79077f9f4bb59" name="a8ccace6d79b7712981b79077f9f4bb59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ccace6d79b7712981b79077f9f4bb59">&#9670;&nbsp;</a></span>GetAppearanceDictionaryObject()</h2>
 
@@ -325,45 +196,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abdf8992aed54beecbdb127bfc2beb50b" name="abdf8992aed54beecbdb127bfc2beb50b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdf8992aed54beecbdb127bfc2beb50b">&#9670;&nbsp;</a></span>GetDestination()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">shared_ptr&lt; <a class="el" href="classmm_1_1PdfDestination.html">PdfDestination</a> &gt; PdfAnnotation::GetDestination </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Get the destination of a link annotations</p>
-<dl class="section return"><dt>Returns</dt><dd>a destination object </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfAnnotation.html#aaa7a72a7ea5959e286e31be4f7b03194">SetDestination</a> </dd></dl>
-
-</div>
-</div>
-<a id="ac774532a599777bef4cbce27dd8bb275" name="ac774532a599777bef4cbce27dd8bb275"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac774532a599777bef4cbce27dd8bb275">&#9670;&nbsp;</a></span>GetFileAttachement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">shared_ptr&lt; <a class="el" href="classmm_1_1PdfFileSpec.html">PdfFileSpec</a> &gt; PdfAnnotation::GetFileAttachement </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Get a file attachement of this annotation. </p><dl class="section return"><dt>Returns</dt><dd>a file specification object. The file specification object is owned by the <a class="el" href="classmm_1_1PdfAnnotation.html">PdfAnnotation</a>.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfAnnotation.html#aed4e74a538f920ea080945f51132e9cc">SetFileAttachement</a> </dd></dl>
-
-</div>
-</div>
 <a id="ab0aad90d73e695a2357ee40639fdc108" name="ab0aad90d73e695a2357ee40639fdc108"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0aad90d73e695a2357ee40639fdc108">&#9670;&nbsp;</a></span>GetFlags()</h2>
 
@@ -380,24 +212,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Get the flags of this annotation. </p><dl class="section return"><dt>Returns</dt><dd>the flags which is an unsigned 32bit integer with different PdfAnnotationFlags OR'ed together.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfAnnotation.html#abd77831103dc8c2bc2948886925a080a">SetFlags</a> </dd></dl>
-
-</div>
-</div>
-<a id="a9d42b6a07352cc85899955ad92029da1" name="a9d42b6a07352cc85899955ad92029da1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d42b6a07352cc85899955ad92029da1">&#9670;&nbsp;</a></span>GetOpen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PdfAnnotation::GetOpen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true if this annotation should be opened immediately by the viewer </dd></dl>
 
 </div>
 </div>
@@ -425,25 +239,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p >Get the page of this PdfField</p>
 <dl class="section return"><dt>Returns</dt><dd>the page of this PdfField </dd></dl>
-
-</div>
-</div>
-<a id="a973f00d42acbf7b27a3aad020ddbe181" name="a973f00d42acbf7b27a3aad020ddbe181"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a973f00d42acbf7b27a3aad020ddbe181">&#9670;&nbsp;</a></span>GetQuadPoints()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classmm_1_1PdfArray.html">PdfArray</a> PdfAnnotation::GetQuadPoints </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Get the quad points associated with the annotation (if appropriate). This array is used in text markup annotations to describe the regions affected by the markup (i.e. the hilighted words, one quadrilateral per word)</p>
-<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classmm_1_1PdfArray.html">PdfArray</a> of 8xn numbers describing the x,y coordinates of BL BR TR TL corners of the quadrilaterals. If inappropriate, returns an empty array. </dd></dl>
 
 </div>
 </div>
@@ -511,60 +306,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac3dba297e61771e4f205439211dada88" name="ac3dba297e61771e4f205439211dada88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3dba297e61771e4f205439211dada88">&#9670;&nbsp;</a></span>HasAction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PdfAnnotation::HasAction </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true if this annotation has an action </dd></dl>
-
-</div>
-</div>
-<a id="a73e384c08bebd9a2f3c2de8fb08824a7" name="a73e384c08bebd9a2f3c2de8fb08824a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73e384c08bebd9a2f3c2de8fb08824a7">&#9670;&nbsp;</a></span>HasDestination()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PdfAnnotation::HasDestination </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true if this annotation has an destination </dd></dl>
-
-</div>
-</div>
-<a id="adfa4822838611e04df0dcad5163c909c" name="adfa4822838611e04df0dcad5163c909c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfa4822838611e04df0dcad5163c909c">&#9670;&nbsp;</a></span>HasFileAttachement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool PdfAnnotation::HasFileAttachement </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true if this annotation has a file attachement </dd></dl>
-
-</div>
-</div>
 <a id="a1f94ca8abde818598941b1fd13bc8715" name="a1f94ca8abde818598941b1fd13bc8715"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f94ca8abde818598941b1fd13bc8715">&#9670;&nbsp;</a></span>ResetColor()</h2>
 
@@ -580,31 +321,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Set the C key of the Annotation dictionary to an empty array, which, as per 8.4 of the pdf spec., makes the annotation transparent </p>
-
-</div>
-</div>
-<a id="a5dcb2052584b1f6ce39802583062b852" name="a5dcb2052584b1f6ce39802583062b852"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dcb2052584b1f6ce39802583062b852">&#9670;&nbsp;</a></span>SetAction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PdfAnnotation::SetAction </td>
-          <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classmm_1_1PdfAction.html">PdfAction</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>action</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set the action that is executed for this annotation </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">action</td><td>an action object</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfAnnotation.html#a11f5435922be5a1e08391c3f562cc39b">GetAction</a> </dd></dl>
 
 </div>
 </div>
@@ -885,56 +601,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaa7a72a7ea5959e286e31be4f7b03194" name="aaa7a72a7ea5959e286e31be4f7b03194"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa7a72a7ea5959e286e31be4f7b03194">&#9670;&nbsp;</a></span>SetDestination()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PdfAnnotation::SetDestination </td>
-          <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classmm_1_1PdfDestination.html">PdfDestination</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>destination</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set the destination for link annotations </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">destination</td><td>target of the link</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfAnnotation.html#abdf8992aed54beecbdb127bfc2beb50b">GetDestination</a> </dd></dl>
-
-</div>
-</div>
-<a id="aed4e74a538f920ea080945f51132e9cc" name="aed4e74a538f920ea080945f51132e9cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed4e74a538f920ea080945f51132e9cc">&#9670;&nbsp;</a></span>SetFileAttachement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PdfAnnotation::SetFileAttachement </td>
-          <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classmm_1_1PdfFileSpec.html">PdfFileSpec</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>fileSpec</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set a file attachment for this annotation. The type of this annotation has to be PdfAnnotationType::FileAttachement for file attachements to work.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rFileSpec</td><td>a file specification </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="abd77831103dc8c2bc2948886925a080a" name="abd77831103dc8c2bc2948886925a080a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd77831103dc8c2bc2948886925a080a">&#9670;&nbsp;</a></span>SetFlags()</h2>
 
@@ -957,55 +623,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfAnnotation.html#ab0aad90d73e695a2357ee40639fdc108">GetFlags</a> </dd></dl>
-
-</div>
-</div>
-<a id="a50fc664713c9dbd2470954f3015d328e" name="a50fc664713c9dbd2470954f3015d328e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50fc664713c9dbd2470954f3015d328e">&#9670;&nbsp;</a></span>SetOpen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PdfAnnotation::SetOpen </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>b</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets whether this annotation is initialy open. You should always set this true for popup annotations. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">b</td><td>if true open it </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a43515bedff52f72e39c0b5ec5c639f33" name="a43515bedff52f72e39c0b5ec5c639f33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43515bedff52f72e39c0b5ec5c639f33">&#9670;&nbsp;</a></span>SetQuadPoints()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PdfAnnotation::SetQuadPoints </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmm_1_1PdfArray.html">PdfArray</a> &amp;&#160;</td>
-          <td class="paramname"><em>quadPoints</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Set the quad points associated with the annotation (if appropriate). This array is used in text markup annotations to describe the regions affected by the markup (i.e. the hilighted words, one quadrilateral per word)</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">quadPoints</td><td>a <a class="el" href="classmm_1_1PdfArray.html">PdfArray</a> of 8xn numbers describing the x,y coordinates of BL BR TR TL corners of the quadrilaterals. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1061,7 +678,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 00:55:41 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Oct 23 2022 00:54:26 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

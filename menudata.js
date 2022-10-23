@@ -132,7 +132,6 @@ var menudata={children:[
 {text:"All",url:"functions.html",children:[
 {text:"a",url:"functions.html#index_a"},
 {text:"acti",url:"functions_a.html#index_a"},
-{text:"anno",url:"functions_a.html#index_a"},
 {text:"arra",url:"functions_a.html#index_a"},
 {text:"axia",url:"functions_a.html#index_a"},
 {text:"b",url:"functions_b.html#index_b"},
@@ -161,7 +160,6 @@ var menudata={children:[
 {text:"h",url:"functions_h.html#index_h"},
 {text:"i",url:"functions_i.html#index_i"},
 {text:"iden",url:"functions_i.html#index_i"},
-{text:"imag",url:"functions_i.html#index_i"},
 {text:"imme",url:"functions_i.html#index_i"},
 {text:"info",url:"functions_i.html#index_i"},
 {text:"l",url:"functions_l.html#index_l"},
@@ -200,7 +198,6 @@ var menudata={children:[
 {text:"Functions",url:"functions_func.html",children:[
 {text:"a",url:"functions_func.html#index_a"},
 {text:"acti",url:"functions_func_a.html#index_a"},
-{text:"anno",url:"functions_func_a.html#index_a"},
 {text:"arra",url:"functions_func_a.html#index_a"},
 {text:"axia",url:"functions_func_a.html#index_a"},
 {text:"b",url:"functions_func_b.html#index_b"},
@@ -229,7 +226,6 @@ var menudata={children:[
 {text:"h",url:"functions_func_h.html#index_h"},
 {text:"i",url:"functions_func_i.html#index_i"},
 {text:"iden",url:"functions_func_i.html#index_i"},
-{text:"imag",url:"functions_func_i.html#index_i"},
 {text:"imme",url:"functions_func_i.html#index_i"},
 {text:"info",url:"functions_func_i.html#index_i"},
 {text:"l",url:"functions_func_l.html#index_l"},
