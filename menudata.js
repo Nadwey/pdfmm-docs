@@ -60,6 +60,7 @@ var menudata={children:[
 {text:"l",url:"namespacemembers.html#index_l"},
 {text:"line",url:"namespacemembers.html#index_l"},
 {text:"logs",url:"namespacemembers.html#index_l"},
+{text:"n",url:"namespacemembers.html#index_n"},
 {text:"oper",url:"namespacemembers.html#index_o"},
 {text:"outl",url:"namespacemembers.html#index_o"},
 {text:"page",url:"namespacemembers.html#index_p"},

@@ -63,8 +63,6 @@ Inheritance diagram for mm::PdfImage:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a071651a5ef19d731eb366a84ba0a6f44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a071651a5ef19d731eb366a84ba0a6f44">SetColorSpace</a> (<a class="el" href="namespacemm.html#a0a37ffa7339f74a5677c69a08d4db87e">PdfColorSpace</a> colorSpace, const <a class="el" href="classmm_1_1PdfArray.html">PdfArray</a> *indexedData=nullptr)</td></tr>
-<tr class="separator:a071651a5ef19d731eb366a84ba0a6f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92bf5d6f805e162038fb4dde67305ff4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemm.html#a0a37ffa7339f74a5677c69a08d4db87e">PdfColorSpace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a92bf5d6f805e162038fb4dde67305ff4">GetColorSpace</a> () const</td></tr>
 <tr class="separator:a92bf5d6f805e162038fb4dde67305ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec0a19e5435bd6aa09663900818674cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#aec0a19e5435bd6aa09663900818674cc">SetICCProfile</a> (<a class="el" href="classmm_1_1InputStream.html">InputStream</a> &amp;stream, unsigned colorComponents, <a class="el" href="namespacemm.html#a0a37ffa7339f74a5677c69a08d4db87e">PdfColorSpace</a> alternateColorSpace=PdfColorSpace::DeviceRGB)</td></tr>
@@ -75,16 +73,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf9721944518882eee762ec58a839ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2059842c34f8ed4176a19c5f021b7c20"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a2059842c34f8ed4176a19c5f021b7c20">GetHeight</a> () const</td></tr>
 <tr class="separator:a2059842c34f8ed4176a19c5f021b7c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a799dc7cf47804361c9d811098c595ae2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a799dc7cf47804361c9d811098c595ae2">SetData</a> (<a class="el" href="classmm_1_1InputStream.html">InputStream</a> &amp;stream, unsigned width, unsigned height, unsigned bitsPerComponent)</td></tr>
-<tr class="separator:a799dc7cf47804361c9d811098c595ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78ba7a28ccb783e601f719f625f92556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a78ba7a28ccb783e601f719f625f92556">SetData</a> (<a class="el" href="classmm_1_1InputStream.html">InputStream</a> &amp;stream, unsigned width, unsigned height, unsigned bitsPerComponent, PdfFilterList &amp;filters)</td></tr>
-<tr class="separator:a78ba7a28ccb783e601f719f625f92556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab242489d14bdda27a1894885f12b7ffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#ab242489d14bdda27a1894885f12b7ffc">SetDataRaw</a> (<a class="el" href="classmm_1_1InputStream.html">InputStream</a> &amp;stream, unsigned width, unsigned height, unsigned bitsPerComponent)</td></tr>
-<tr class="separator:ab242489d14bdda27a1894885f12b7ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ae1b7d82d5a85e259cb568bd63043f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a7ae1b7d82d5a85e259cb568bd63043f0">LoadFromFile</a> (const std::string_view &amp;filename)</td></tr>
-<tr class="separator:a7ae1b7d82d5a85e259cb568bd63043f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb275e064dd420715078f377810b0e87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#adb275e064dd420715078f377810b0e87">LoadFromData</a> (const unsigned char *data, size_t len)</td></tr>
-<tr class="separator:adb275e064dd420715078f377810b0e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a735fab1c2fc6855eca9160e52fffc0e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a735fab1c2fc6855eca9160e52fffc0e0">SetData</a> (const bufferview &amp;buffer, unsigned width, unsigned height, PdfPixelFormat format, int rowSize=-1)</td></tr>
+<tr class="separator:a735fab1c2fc6855eca9160e52fffc0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43222270a3f7ceec6160480625706a22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a43222270a3f7ceec6160480625706a22">SetData</a> (<a class="el" href="classmm_1_1InputStream.html">InputStream</a> &amp;stream, unsigned width, unsigned height, PdfPixelFormat format, int rowSize=-1)</td></tr>
+<tr class="separator:a43222270a3f7ceec6160480625706a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6568d35c466bc45ff6ce9330be1307"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a5b6568d35c466bc45ff6ce9330be1307">SetDataRaw</a> (const bufferview &amp;buffer, const PdfImageInfo &amp;info)</td></tr>
+<tr class="separator:a5b6568d35c466bc45ff6ce9330be1307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9842a92b9854d71fadbb8456ff4b33bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a9842a92b9854d71fadbb8456ff4b33bf">SetDataRaw</a> (<a class="el" href="classmm_1_1InputStream.html">InputStream</a> &amp;stream, const PdfImageInfo &amp;info)</td></tr>
+<tr class="separator:a9842a92b9854d71fadbb8456ff4b33bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8cdee4068d6c97061d90802507bf445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#aa8cdee4068d6c97061d90802507bf445">LoadFromFile</a> (const std::string_view &amp;filepath)</td></tr>
+<tr class="separator:aa8cdee4068d6c97061d90802507bf445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af80c878dbbf725d4988f718c8fea8e64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#af80c878dbbf725d4988f718c8fea8e64">LoadFromBuffer</a> (const bufferview &amp;buffer)</td></tr>
+<tr class="separator:af80c878dbbf725d4988f718c8fea8e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1649ffce507e7b369b8621720e48edb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a1649ffce507e7b369b8621720e48edb9">SetChromaKeyMask</a> (int64_t r, int64_t g, int64_t b, int64_t threshold=0)</td></tr>
 <tr class="separator:a1649ffce507e7b369b8621720e48edb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69154f4e228a37b6fb0ad642cc3b544d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfImage.html#a69154f4e228a37b6fb0ad642cc3b544d">SetInterpolate</a> (bool value)</td></tr>
@@ -97,9 +97,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p >A <a class="el" href="classmm_1_1PdfImage.html">PdfImage</a> object is needed when ever you want to embedd an image file into a PDF document. The <a class="el" href="classmm_1_1PdfImage.html">PdfImage</a> object is embedded once and can be drawn as often as you want on any page in the document using <a class="el" href="classmm_1_1PdfPainter.html">PdfPainter</a></p>
 <dl class="section see"><dt>See also</dt><dd>GetImageReference </dd>
 <dd>
-<a class="el" href="classmm_1_1PdfPainter.html#adf1047a12c6fbf525e7208dcb4e729c1">PdfPainter::DrawImage</a></dd>
-<dd>
-SetImageData </dd></dl>
+<a class="el" href="classmm_1_1PdfPainter.html#adf1047a12c6fbf525e7208dcb4e729c1">PdfPainter::DrawImage</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a92bf5d6f805e162038fb4dde67305ff4" name="a92bf5d6f805e162038fb4dde67305ff4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92bf5d6f805e162038fb4dde67305ff4">&#9670;&nbsp;</a></span>GetColorSpace()</h2>
@@ -156,43 +154,27 @@ SetImageData </dd></dl>
 
 </div>
 </div>
-<a id="adb275e064dd420715078f377810b0e87" name="adb275e064dd420715078f377810b0e87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb275e064dd420715078f377810b0e87">&#9670;&nbsp;</a></span>LoadFromData()</h2>
+<a id="af80c878dbbf725d4988f718c8fea8e64" name="af80c878dbbf725d4988f718c8fea8e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af80c878dbbf725d4988f718c8fea8e64">&#9670;&nbsp;</a></span>LoadFromBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PdfImage::LoadFromData </td>
+          <td class="memname">void PdfImage::LoadFromBuffer </td>
           <td>(</td>
-          <td class="paramtype">const unsigned char *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const bufferview &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Load the image data from bytes </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>bytes </td></tr>
-    <tr><td class="paramname">len</td><td>number of bytes </td></tr>
-  </table>
-  </dd>
-</dl>
+<p >Load the image data from bytes </p>
 
 </div>
 </div>
-<a id="a7ae1b7d82d5a85e259cb568bd63043f0" name="a7ae1b7d82d5a85e259cb568bd63043f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ae1b7d82d5a85e259cb568bd63043f0">&#9670;&nbsp;</a></span>LoadFromFile()</h2>
+<a id="aa8cdee4068d6c97061d90802507bf445" name="aa8cdee4068d6c97061d90802507bf445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8cdee4068d6c97061d90802507bf445">&#9670;&nbsp;</a></span>LoadFromFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,17 +183,12 @@ SetImageData </dd></dl>
           <td class="memname">void PdfImage::LoadFromFile </td>
           <td>(</td>
           <td class="paramtype">const std::string_view &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Load the image data from a file </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p >Load the image data from a file </p>
 
 </div>
 </div>
@@ -265,23 +242,41 @@ SetImageData </dd></dl>
 
 </div>
 </div>
-<a id="a071651a5ef19d731eb366a84ba0a6f44" name="a071651a5ef19d731eb366a84ba0a6f44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a071651a5ef19d731eb366a84ba0a6f44">&#9670;&nbsp;</a></span>SetColorSpace()</h2>
+<a id="a735fab1c2fc6855eca9160e52fffc0e0" name="a735fab1c2fc6855eca9160e52fffc0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a735fab1c2fc6855eca9160e52fffc0e0">&#9670;&nbsp;</a></span>SetData() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PdfImage::SetColorSpace </td>
+          <td class="memname">void PdfImage::SetData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacemm.html#a0a37ffa7339f74a5677c69a08d4db87e">PdfColorSpace</a>&#160;</td>
-          <td class="paramname"><em>colorSpace</em>, </td>
+          <td class="paramtype">const bufferview &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classmm_1_1PdfArray.html">PdfArray</a> *&#160;</td>
-          <td class="paramname"><em>indexedData</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PdfPixelFormat&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowSize</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -290,19 +285,22 @@ SetImageData </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Set the color space of this image. The default value is PdfColorSpace::DeviceRGB. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Set the actual image data from a buffer</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">colorSpace</td><td>one of PdfColorSpace::DeviceGray, PdfColorSpace::DeviceRGB and PdfColorSpace::DeviceCMYK, PdfColorSpace::Indexed </td></tr>
-    <tr><td class="paramname">indexedData</td><td>this parameter is required only for PdfColorSpace::Indexed and it contains string with one number and then color palette, like "/DeviceRGB 15 &lt;000000 00FF00...&gt;" or the string array can be a resource name.</td></tr>
+    <tr><td class="paramname">buffer</td><td>buffer supplying image data </td></tr>
+    <tr><td class="paramname">width</td><td>width of the image in pixels </td></tr>
+    <tr><td class="paramname">height</td><td>height of the image in pixels </td></tr>
+    <tr><td class="paramname">format</td><td>pixel format of the bitmap </td></tr>
+    <tr><td class="paramname">rowSize</td><td>length of the row, if negative the default is used </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>SetImageICCProfile to set an ICC profile instead of a simple colorspace </dd></dl>
 
 </div>
 </div>
-<a id="a799dc7cf47804361c9d811098c595ae2" name="a799dc7cf47804361c9d811098c595ae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a799dc7cf47804361c9d811098c595ae2">&#9670;&nbsp;</a></span>SetData() <span class="overload">[1/2]</span></h2>
+<a id="a43222270a3f7ceec6160480625706a22" name="a43222270a3f7ceec6160480625706a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43222270a3f7ceec6160480625706a22">&#9670;&nbsp;</a></span>SetData() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,8 +326,14 @@ SetImageData </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>bitsPerComponent</em>&#160;</td>
+          <td class="paramtype">PdfPixelFormat&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowSize</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -339,55 +343,36 @@ SetImageData </dd></dl>
       </table>
 </div><div class="memdoc">
 <p >Set the actual image data from an input stream</p>
-<p >The image data will be flate compressed. If you want no compression or another filter to be applied use the overload of SetImageData which takes a filter list as argument.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stream</td><td>stream supplieding raw image data </td></tr>
+    <tr><td class="paramname">stream</td><td>stream supplying raw image data </td></tr>
     <tr><td class="paramname">width</td><td>width of the image in pixels </td></tr>
     <tr><td class="paramname">height</td><td>height of the image in pixels </td></tr>
-    <tr><td class="paramname">bitsPerComponent</td><td>bits per color component of the image (depends on the image colorspace you have set but is 8 in most cases)</td></tr>
+    <tr><td class="paramname">format</td><td>pixel format of the bitmap </td></tr>
+    <tr><td class="paramname">rowSize</td><td>length of the row, if negative the default is used </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>SetImageData </dd></dl>
 
 </div>
 </div>
-<a id="a78ba7a28ccb783e601f719f625f92556" name="a78ba7a28ccb783e601f719f625f92556"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78ba7a28ccb783e601f719f625f92556">&#9670;&nbsp;</a></span>SetData() <span class="overload">[2/2]</span></h2>
+<a id="a5b6568d35c466bc45ff6ce9330be1307" name="a5b6568d35c466bc45ff6ce9330be1307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6568d35c466bc45ff6ce9330be1307">&#9670;&nbsp;</a></span>SetDataRaw() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PdfImage::SetData </td>
+          <td class="memname">void PdfImage::SetDataRaw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmm_1_1InputStream.html">InputStream</a> &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
+          <td class="paramtype">const bufferview &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>bitsPerComponent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PdfFilterList &amp;&#160;</td>
-          <td class="paramname"><em>filters</em>&#160;</td>
+          <td class="paramtype">const PdfImageInfo &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -396,22 +381,19 @@ SetImageData </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Set the actual image data from an input stream</p>
+<p >Set the actual image encoded data from a buffer</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stream</td><td>stream suplying raw image data </td></tr>
-    <tr><td class="paramname">width</td><td>width of the image in pixels </td></tr>
-    <tr><td class="paramname">height</td><td>height of the image in pixels </td></tr>
-    <tr><td class="paramname">bitsPerComponent</td><td>bits per color component of the image (depends on the image colorspace you have set but is 8 in most cases) </td></tr>
-    <tr><td class="paramname">filters</td><td>these filters will be applied to compress the image data </td></tr>
+    <tr><td class="paramname">buffer</td><td>buffer supplying image data </td></tr>
+    <tr><td class="paramname">info</td><td>parameters describing the encoded image data </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ab242489d14bdda27a1894885f12b7ffc" name="ab242489d14bdda27a1894885f12b7ffc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab242489d14bdda27a1894885f12b7ffc">&#9670;&nbsp;</a></span>SetDataRaw()</h2>
+<a id="a9842a92b9854d71fadbb8456ff4b33bf" name="a9842a92b9854d71fadbb8456ff4b33bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9842a92b9854d71fadbb8456ff4b33bf">&#9670;&nbsp;</a></span>SetDataRaw() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,20 +407,8 @@ SetImageData </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>bitsPerComponent</em>&#160;</td>
+          <td class="paramtype">const PdfImageInfo &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -447,13 +417,11 @@ SetImageData </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Set the actual image data from an input stream. The data has to be encoded already and an appropriate filters key entry has to be set manually before!</p>
+<p >Set the actual image encoded data from an input stream.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stream</td><td>stream supplieding raw image data </td></tr>
-    <tr><td class="paramname">width</td><td>width of the image in pixels </td></tr>
-    <tr><td class="paramname">height</td><td>height of the image in pixels </td></tr>
-    <tr><td class="paramname">bitsPerComponent</td><td>bits per color component of the image (depends on the image colorspace you have set but is 8 in most cases) </td></tr>
+    <tr><td class="paramname">stream</td><td>stream supplying encoded image data </td></tr>
+    <tr><td class="paramname">info</td><td>parameters describing the encoded image data </td></tr>
   </table>
   </dd>
 </dl>
@@ -555,7 +523,7 @@ SetImageData </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 23 2022 00:54:26 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Oct 30 2022 00:51:54 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

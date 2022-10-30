@@ -616,6 +616,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3c16076e9ffa1b6a70e78b0fe335a813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ed62bd2d3e2a1ddd2bd3364c4255a94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemm.html#a4ed62bd2d3e2a1ddd2bd3364c4255a94">SignDocument</a> (<a class="el" href="classmm_1_1PdfMemDocument.html">PdfMemDocument</a> &amp;doc, <a class="el" href="classmm_1_1StreamDevice.html">StreamDevice</a> &amp;device, PdfSigner &amp;signer, PdfSignature &amp;signature, PdfSaveOptions saveOptions=PdfSaveOptions::None)</td></tr>
 <tr class="separator:a4ed62bd2d3e2a1ddd2bd3364c4255a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d3b0aa9fab90edd155c55f6a781061"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemm.html#a0a37ffa7339f74a5677c69a08d4db87e">PdfColorSpace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemm.html#a41d3b0aa9fab90edd155c55f6a781061">NameToColorSpaceRaw</a> (const std::string_view &amp;name)</td></tr>
+<tr class="separator:a41d3b0aa9fab90edd155c55f6a781061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a5de7579d56e8df88728390570308b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemm.html#a3a5de7579d56e8df88728390570308b3">LogMessage</a> (<a class="el" href="namespacemm.html#abd0d60361517cdaeaa29a3d6188795fe">PdfLogSeverity</a> logSeverity, const std::string_view &amp;msg)</td></tr>
 <tr class="separator:a3a5de7579d56e8df88728390570308b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a26575fce1495946872860d3dfeb1a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemm.html#a6a26575fce1495946872860d3dfeb1a5">CheckValidUTF8ToPdfDocEcondingChars</a> (const std::string_view &amp;view, bool &amp;isAsciiEqual)</td></tr>
@@ -2688,6 +2690,33 @@ constexpr <a class="el" href="namespacemm.html#ae2aa081cb4fbb345563033e03e3347a3
 
 </div>
 </div>
+<a id="a41d3b0aa9fab90edd155c55f6a781061" name="a41d3b0aa9fab90edd155c55f6a781061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d3b0aa9fab90edd155c55f6a781061">&#9670;&nbsp;</a></span>NameToColorSpaceRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemm.html#a0a37ffa7339f74a5677c69a08d4db87e">PdfColorSpace</a> mm::NameToColorSpaceRaw </td>
+          <td>(</td>
+          <td class="paramtype">const std::string_view &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Convert a name into a colorspace enum.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name representing a colorspace such as DeviceGray </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>colorspace enum or PdfColorSpace_Unknown if name is unknown </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>GetNameForColorSpace </dd></dl>
+
+</div>
+</div>
 <a id="a4ed62bd2d3e2a1ddd2bd3364c4255a94" name="a4ed62bd2d3e2a1ddd2bd3364c4255a94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ed62bd2d3e2a1ddd2bd3364c4255a94">&#9670;&nbsp;</a></span>SignDocument()</h2>
 
@@ -2805,7 +2834,7 @@ constexpr <a class="el" href="namespacemm.html#ae2aa081cb4fbb345563033e03e3347a3
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 23 2022 00:54:26 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Oct 30 2022 00:51:54 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
