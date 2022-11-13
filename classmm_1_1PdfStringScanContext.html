@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pdfmm: mm::PdfResources Class Reference</title>
+<title>pdfmm: mm::PdfStringScanContext Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -39,51 +39,59 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacemm.html">mm</a></li><li class="navelem"><a class="el" href="classmm_1_1PdfResources.html">PdfResources</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacemm.html">mm</a></li><li class="navelem"><a class="el" href="classmm_1_1PdfStringScanContext.html">PdfStringScanContext</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classmm_1_1PdfResources-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">mm::PdfResources Class Reference</div></div>
+<a href="classmm_1_1PdfStringScanContext-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">mm::PdfStringScanContext Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;PdfResources.h&gt;</code></p>
-
-<p>Inherits mm::PdfDictionaryElement.</p>
+<p><code>#include &lt;PdfEncoding.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9f651391c94f191f235c9c0ee98b69eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfResources.html#a9f651391c94f191f235c9c0ee98b69eb">AddColorResource</a> (const <a class="el" href="classmm_1_1PdfColor.html">PdfColor</a> &amp;color)</td></tr>
-<tr class="separator:a9f651391c94f191f235c9c0ee98b69eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9ea3f23f41eee08d3d4660c020f19bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfStringScanContext.html#aa9ea3f23f41eee08d3d4660c020f19bf">TryScan</a> (<a class="el" href="structmm_1_1PdfCID.html">PdfCID</a> &amp;cid, std::string &amp;utf8str, std::vector&lt; <a class="el" href="namespacemm.html#ae2dff6c2c4afdf60a2ac404e7944c69c">codepoint</a> &gt; &amp;codepoints)</td></tr>
+<tr class="separator:aa9ea3f23f41eee08d3d4660c020f19bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A interface that provides a wrapper around /Resources </p>
+<div class="textblock"><p >A PDF string context to interatively scan a string and collect both CID and unicode codepoints </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9f651391c94f191f235c9c0ee98b69eb" name="a9f651391c94f191f235c9c0ee98b69eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f651391c94f191f235c9c0ee98b69eb">&#9670;&nbsp;</a></span>AddColorResource()</h2>
+<a id="aa9ea3f23f41eee08d3d4660c020f19bf" name="aa9ea3f23f41eee08d3d4660c020f19bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9ea3f23f41eee08d3d4660c020f19bf">&#9670;&nbsp;</a></span>TryScan()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PdfResources::AddColorResource </td>
+          <td class="memname">bool PdfStringScanContext::TryScan </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmm_1_1PdfColor.html">PdfColor</a> &amp;&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structmm_1_1PdfCID.html">PdfCID</a> &amp;&#160;</td>
+          <td class="paramname"><em>cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>utf8str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacemm.html#ae2dff6c2c4afdf60a2ac404e7944c69c">codepoint</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>codepoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Register a colourspace for a (separation) colour in the resource dictionary of this page or XObject so that it can be used for any following drawing operations.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">color</td><td>reference to the <a class="el" href="classmm_1_1PdfColor.html">PdfColor</a> </td></tr>
-  </table>
-  </dd>
-</dl>
+<p >Advance string reading </p><dl class="section return"><dt>Returns</dt><dd>true if success </dd></dl>
 
 </div>
 </div>

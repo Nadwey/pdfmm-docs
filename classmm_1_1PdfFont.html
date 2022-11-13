@@ -85,6 +85,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a81c6f70ab41621006d0f065bfe92775e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ebfd800290ac8f0176ee38b47f93b93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfFont.html#a6ebfd800290ac8f0176ee38b47f93b93">TryGetStringLength</a> (const <a class="el" href="classmm_1_1PdfString.html">PdfString</a> &amp;encodedStr, const PdfTextState &amp;state, double &amp;length) const</td></tr>
 <tr class="separator:a6ebfd800290ac8f0176ee38b47f93b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3091376966d916d362ea70ac13228131"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfFont.html#a3091376966d916d362ea70ac13228131">TryScanString</a> (const <a class="el" href="classmm_1_1PdfString.html">PdfString</a> &amp;encodedStr, const PdfTextState &amp;state, std::string &amp;utf8str, std::vector&lt; double &gt; &amp;lengths, std::vector&lt; unsigned &gt; &amp;positions) const</td></tr>
+<tr class="separator:a3091376966d916d362ea70ac13228131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb814866c2c9b2a7222651e0651e1ff4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfFont.html#adb814866c2c9b2a7222651e0651e1ff4">GetWordSpacingLength</a> (const PdfTextState &amp;state) const</td></tr>
 <tr class="separator:adb814866c2c9b2a7222651e0651e1ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afda5f99813e1f804e417333e019785cf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfFont.html#afda5f99813e1f804e417333e019785cf">GetCharLength</a> (char32_t codePoint, const PdfTextState &amp;state, bool ignoreCharSpacing=false) const</td></tr>
@@ -1132,6 +1134,60 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3091376966d916d362ea70ac13228131" name="a3091376966d916d362ea70ac13228131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3091376966d916d362ea70ac13228131">&#9670;&nbsp;</a></span>TryScanString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PdfFont::TryScanString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmm_1_1PdfString.html">PdfString</a> &amp;&#160;</td>
+          <td class="paramname"><em>encodedStr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PdfTextState &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>utf8str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lengths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; unsigned &gt; &amp;&#160;</td>
+          <td class="paramname"><em>positions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Scan string decoding unicode codepoints and obtaining glyphs lengths </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lengths</td><td>lengths of the glyphs </td></tr>
+    <tr><td class="paramname">positions</td><td>position of the CIDs in the utf8string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Produces a partial result also in case of failures </dd></dl>
+
+</div>
+</div>
 <a id="af90fbc522dc5834843bb9a8f7ef2830a" name="af90fbc522dc5834843bb9a8f7ef2830a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af90fbc522dc5834843bb9a8f7ef2830a">&#9670;&nbsp;</a></span>WriteStringToStream()</h2>
 
@@ -1171,7 +1227,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 00:42:40 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Nov 13 2022 00:38:55 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
