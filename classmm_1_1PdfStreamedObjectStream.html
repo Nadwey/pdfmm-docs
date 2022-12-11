@@ -63,8 +63,6 @@ Inheritance diagram for mm::PdfStreamedObjectStream:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c3061f649df9e84aa94e03fad4f77a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfStreamedObjectStream.html#a6c3061f649df9e84aa94e03fad4f77a3">PdfStreamedObjectStream</a> (<a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> &amp;parent, OutputStreamDevice &amp;device)</td></tr>
-<tr class="separator:a6c3061f649df9e84aa94e03fad4f77a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c421c16df5b46758675be192939d43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfStreamedObjectStream.html#a22c421c16df5b46758675be192939d43">SetEncrypted</a> (<a class="el" href="classmm_1_1PdfEncrypt.html">PdfEncrypt</a> &amp;encrypt)</td></tr>
 <tr class="separator:a22c421c16df5b46758675be192939d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc6c795665995bd7b53fb408fa3908f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfStreamedObjectStream.html#acc6c795665995bd7b53fb408fa3908f8">Write</a> (<a class="el" href="classmm_1_1OutputStream.html">OutputStream</a> &amp;stream, const PdfStatefulEncrypt &amp;encrypt) override</td></tr>
@@ -100,10 +98,12 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classmm_1_1PdfObjectStream"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmm_1_1PdfObjectStream')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmm_1_1PdfObjectStream.html">mm::PdfObjectStream</a></td></tr>
-<tr class="memitem:a629baff57a6fd573c3c6180e3ee6097c inherit pro_methods_classmm_1_1PdfObjectStream"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfObjectStream.html#a629baff57a6fd573c3c6180e3ee6097c">PdfObjectStream</a> (<a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> &amp;parent)</td></tr>
-<tr class="separator:a629baff57a6fd573c3c6180e3ee6097c inherit pro_methods_classmm_1_1PdfObjectStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e2d9370516c4c92866a3ac3b193f8b inherit pro_methods_classmm_1_1PdfObjectStream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfObjectStream.html#a06e2d9370516c4c92866a3ac3b193f8b">Write</a> (<a class="el" href="classmm_1_1OutputStream.html">OutputStream</a> &amp;stream, const PdfStatefulEncrypt &amp;encrypt)=0</td></tr>
 <tr class="separator:a06e2d9370516c4c92866a3ac3b193f8b inherit pro_methods_classmm_1_1PdfObjectStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720214378897300ee69bc2a799939959 inherit pro_methods_classmm_1_1PdfObjectStream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfObjectStream.html#a720214378897300ee69bc2a799939959">CopyDataFrom</a> (const <a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> &amp;rhs)</td></tr>
+<tr class="separator:a720214378897300ee69bc2a799939959 inherit pro_methods_classmm_1_1PdfObjectStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed70227c2996b6d8b24f500327ae02ea inherit pro_methods_classmm_1_1PdfObjectStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfObjectStream.html#aed70227c2996b6d8b24f500327ae02ea">CopyFrom</a> (const <a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> &amp;rhs)</td></tr>
+<tr class="separator:aed70227c2996b6d8b24f500327ae02ea inherit pro_methods_classmm_1_1PdfObjectStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A PDF stream can be appended to any <a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> and can contain arbitrary data.</p>
@@ -112,44 +112,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classmm_1_1PdfIndirectObjectList.html">PdfIndirectObjectList</a> </dd>
 <dd>
 <a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6c3061f649df9e84aa94e03fad4f77a3" name="a6c3061f649df9e84aa94e03fad4f77a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c3061f649df9e84aa94e03fad4f77a3">&#9670;&#160;</a></span>PdfStreamedObjectStream()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PdfStreamedObjectStream::PdfStreamedObjectStream </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> &amp;&#160;</td>
-          <td class="paramname"><em>parent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OutputStreamDevice &amp;&#160;</td>
-          <td class="paramname"><em>device</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Create a new PdfDeviceObjectStream object which has a parent <a class="el" href="classmm_1_1PdfObject.html">PdfObject</a>. The stream will be deleted along with the parent. This constructor will be called by PdfObject::Stream() for you.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td>parent object </td></tr>
-    <tr><td class="paramname">device</td><td>output device </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa915b6049af55eab3695b403dd6bcabf" name="aa915b6049af55eab3695b403dd6bcabf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa915b6049af55eab3695b403dd6bcabf">&#9670;&#160;</a></span>GetLength()</h2>
 
@@ -252,7 +215,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 4 2022 00:34:49 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 11 2022 00:38:56 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

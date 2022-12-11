@@ -92,10 +92,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a629baff57a6fd573c3c6180e3ee6097c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfObjectStream.html#a629baff57a6fd573c3c6180e3ee6097c">PdfObjectStream</a> (<a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> &amp;parent)</td></tr>
-<tr class="separator:a629baff57a6fd573c3c6180e3ee6097c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e2d9370516c4c92866a3ac3b193f8b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfObjectStream.html#a06e2d9370516c4c92866a3ac3b193f8b">Write</a> (<a class="el" href="classmm_1_1OutputStream.html">OutputStream</a> &amp;stream, const PdfStatefulEncrypt &amp;encrypt)=0</td></tr>
 <tr class="separator:a06e2d9370516c4c92866a3ac3b193f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720214378897300ee69bc2a799939959"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfObjectStream.html#a720214378897300ee69bc2a799939959">CopyDataFrom</a> (const <a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> &amp;rhs)</td></tr>
+<tr class="separator:a720214378897300ee69bc2a799939959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed70227c2996b6d8b24f500327ae02ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfObjectStream.html#aed70227c2996b6d8b24f500327ae02ea">CopyFrom</a> (const <a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> &amp;rhs)</td></tr>
+<tr class="separator:aed70227c2996b6d8b24f500327ae02ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A PDF stream can be appended to any <a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> and can contain arbitrary data.</p>
@@ -105,9 +107,9 @@ Protected Member Functions</h2></td></tr>
 <a class="el" href="classmm_1_1PdfMemoryObjectStream.html">PdfMemoryObjectStream</a> </dd>
 <dd>
 PdfFileObjectStream </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a629baff57a6fd573c3c6180e3ee6097c" name="a629baff57a6fd573c3c6180e3ee6097c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a629baff57a6fd573c3c6180e3ee6097c">&#9670;&#160;</a></span>PdfObjectStream()</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a720214378897300ee69bc2a799939959" name="a720214378897300ee69bc2a799939959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720214378897300ee69bc2a799939959">&#9670;&#160;</a></span>CopyDataFrom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,10 +118,39 @@ PdfFileObjectStream </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PdfObjectStream::PdfObjectStream </td>
+          <td class="memname">void PdfObjectStream::CopyDataFrom </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> &amp;&#160;</td>
-          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Copy data and non data fields from rhs </p>
+
+<p>Reimplemented in <a class="el" href="classmm_1_1PdfMemoryObjectStream.html#afe427bd8c0e2eae69a37e4bcf6c65629">mm::PdfMemoryObjectStream</a>.</p>
+
+</div>
+</div>
+<a id="aed70227c2996b6d8b24f500327ae02ea" name="aed70227c2996b6d8b24f500327ae02ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed70227c2996b6d8b24f500327ae02ea">&#9670;&#160;</a></span>CopyFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PdfObjectStream::CopyFrom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -129,16 +160,10 @@ PdfFileObjectStream </dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Create a new <a class="el" href="classmm_1_1PdfObjectStream.html">PdfObjectStream</a> object which has a parent <a class="el" href="classmm_1_1PdfObject.html">PdfObject</a>. The stream will be deleted along with the parent. This constructor will be called by PdfObject::Stream() for you. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td>parent object </td></tr>
-  </table>
-  </dd>
-</dl>
+<p >Copy non data fields from rhs </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6aa8a6c08cec83ded48788ee1895832d" name="a6aa8a6c08cec83ded48788ee1895832d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6aa8a6c08cec83ded48788ee1895832d">&#9670;&#160;</a></span>CopyTo() <span class="overload">[1/2]</span></h2>
 
@@ -387,7 +412,7 @@ PdfFileObjectStream </dd></dl>
       </table>
 </div><div class="memdoc">
 <p >Set the data contents copying from a buffer</p>
-<p >Use <a class="el" href="classmm_1_1PdfFilterFactory.html#a4c2008383343f251fbd7f134fba8067d">PdfFilterFactory::CreateFilterList()</a> if you want to use the contents of the stream dictionary's existing filter key.</p>
+<p >Use <a class="el" href="classmm_1_1PdfFilterFactory.html#ac1a64fdd9216e0fe045b3f25967acf85">PdfFilterFactory::CreateFilterList()</a> if you want to use the contents of the stream dictionary's existing filter key.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>buffer containing the stream data </td></tr>
@@ -459,7 +484,7 @@ PdfFileObjectStream </dd></dl>
       </table>
 </div><div class="memdoc">
 <p >Set the data contents reading from an <a class="el" href="classmm_1_1InputStream.html">InputStream</a></p>
-<p >Use <a class="el" href="classmm_1_1PdfFilterFactory.html#a4c2008383343f251fbd7f134fba8067d">PdfFilterFactory::CreateFilterList()</a> if you want to use the contents of the stream dictionary's existing filter key.</p>
+<p >Use <a class="el" href="classmm_1_1PdfFilterFactory.html#ac1a64fdd9216e0fe045b3f25967acf85">PdfFilterFactory::CreateFilterList()</a> if you want to use the contents of the stream dictionary's existing filter key.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stream</td><td>read stream contents from this <a class="el" href="classmm_1_1InputStream.html">InputStream</a> </td></tr>
@@ -518,7 +543,7 @@ PdfFileObjectStream </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 4 2022 00:34:49 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 11 2022 00:38:56 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
