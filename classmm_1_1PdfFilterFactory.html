@@ -58,8 +58,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a758c7c5419885d33ba66fdb85532b639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac11782f30c2b7dd81cbf3faef1b34a0e"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classmm_1_1OutputStream.html">OutputStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfFilterFactory.html#ac11782f30c2b7dd81cbf3faef1b34a0e">CreateEncodeStream</a> (const std::shared_ptr&lt; <a class="el" href="classmm_1_1OutputStream.html">OutputStream</a> &gt; &amp;stream, const PdfFilterList &amp;filters)</td></tr>
 <tr class="separator:ac11782f30c2b7dd81cbf3faef1b34a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acea21090643fa27764a3cbcd32e3dff6"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classmm_1_1InputStream.html">InputStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfFilterFactory.html#acea21090643fa27764a3cbcd32e3dff6">CreateDecodeStream</a> (const std::shared_ptr&lt; <a class="el" href="classmm_1_1InputStream.html">InputStream</a> &gt; &amp;stream, const PdfFilterList &amp;filters, const <a class="el" href="classmm_1_1PdfDictionary.html">PdfDictionary</a> &amp;dictionary)</td></tr>
-<tr class="separator:acea21090643fa27764a3cbcd32e3dff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c62a6289829e9da7850af61a361d457"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classmm_1_1InputStream.html">InputStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfFilterFactory.html#a5c62a6289829e9da7850af61a361d457">CreateDecodeStream</a> (const std::shared_ptr&lt; <a class="el" href="classmm_1_1InputStream.html">InputStream</a> &gt; &amp;stream, const PdfFilterList &amp;filters, const <a class="el" href="classmm_1_1PdfDictionary.html">PdfDictionary</a> *decodeParms=nullptr)</td></tr>
+<tr class="separator:a5c62a6289829e9da7850af61a361d457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1a64fdd9216e0fe045b3f25967acf85"><td class="memItemLeft" align="right" valign="top">static PdfFilterList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfFilterFactory.html#ac1a64fdd9216e0fe045b3f25967acf85">CreateFilterList</a> (const <a class="el" href="classmm_1_1PdfObject.html">PdfObject</a> &amp;filtersObj)</td></tr>
 <tr class="separator:ac1a64fdd9216e0fe045b3f25967acf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -101,8 +101,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acea21090643fa27764a3cbcd32e3dff6" name="acea21090643fa27764a3cbcd32e3dff6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acea21090643fa27764a3cbcd32e3dff6">&#9670;&#160;</a></span>CreateDecodeStream()</h2>
+<a id="a5c62a6289829e9da7850af61a361d457" name="a5c62a6289829e9da7850af61a361d457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c62a6289829e9da7850af61a361d457">&#9670;&#160;</a></span>CreateDecodeStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,8 +125,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classmm_1_1PdfDictionary.html">PdfDictionary</a> &amp;&#160;</td>
-          <td class="paramname"><em>dictionary</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classmm_1_1PdfDictionary.html">PdfDictionary</a> *&#160;</td>
+          <td class="paramname"><em>decodeParms</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -145,7 +145,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">filters</td><td>a list of filters </td></tr>
     <tr><td class="paramname">stream</td><td>write all data to this <a class="el" href="classmm_1_1OutputStream.html">OutputStream</a> after it has been decoded. </td></tr>
-    <tr><td class="paramname">dictionary</td><td>pointer to a dictionary that might contain additional parameters for stream decoding. This method will look for a key named DecodeParms in this dictionary and pass the information found in that dictionary to the filters. </td></tr>
+    <tr><td class="paramname">decodeParms</td><td>reference to a dictionary that might contain additional parameters for stream decoding </td></tr>
   </table>
   </dd>
 </dl>
@@ -237,7 +237,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 11 2022 00:38:55 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 18 2022 00:32:39 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

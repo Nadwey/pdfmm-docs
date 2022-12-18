@@ -59,6 +59,10 @@ Functions</h2></td></tr>
 <tr class="separator:a35c92f245a245e476160b33ba4f6793e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cadd26301ce052f447a43e654689b39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutls.html#a7cadd26301ce052f447a43e654689b39">FetchImageGrayScale</a> (<a class="el" href="classmm_1_1OutputStream.html">mm::OutputStream</a> &amp;stream, unsigned width, unsigned heigth, mm::PdfPixelFormat format, const unsigned char *imageData, const mm::charbuff &amp;smaskData, mm::charbuff &amp;scanLine)</td></tr>
 <tr class="separator:a7cadd26301ce052f447a43e654689b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970638a3c14e395c7f87922926ce0e29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutls.html#a970638a3c14e395c7f87922926ce0e29">FetchImageBW</a> (<a class="el" href="classmm_1_1OutputStream.html">mm::OutputStream</a> &amp;stream, unsigned width, unsigned heigth, mm::PdfPixelFormat format, fxcodec::ScanlineDecoder &amp;decoder, const mm::charbuff &amp;smaskData, mm::charbuff &amp;scanLine)</td></tr>
+<tr class="separator:a970638a3c14e395c7f87922926ce0e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378a912513fe57d5a2f35e0cfa40631a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutls.html#a378a912513fe57d5a2f35e0cfa40631a">DoesMultiplicationOverflow</a> (size_t op1, size_t op2)</td></tr>
+<tr class="separator:a378a912513fe57d5a2f35e0cfa40631a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6def133069085e2db3a9c17ec9d06c9a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutls.html#a6def133069085e2db3a9c17ec9d06c9a">TypeNameForIndex</a> (unsigned index, const char **types, unsigned len)</td></tr>
 <tr class="separator:a6def133069085e2db3a9c17ec9d06c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebc35d3f817a2326e2ab9069b6659ec3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutls.html#aebc35d3f817a2326e2ab9069b6659ec3">TypeNameToIndex</a> (const char *type, const char **types, unsigned len, int unknownValue)</td></tr>
@@ -72,6 +76,94 @@ Functions</h2></td></tr>
 <div class="textblock"><p >SPDX-FileCopyrightText: (C) 2022 Francesco Pretto <a href="#" onclick="location.href='mai'+'lto:'+'cez'+'tk'+'o@g'+'ma'+'il.'+'co'+'m'; return false;">ceztk<span class="obfuscator">.nosp@m.</span>o@gm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>om</a> SPDX-License-Identifier: LGPL-2.0-or-later SPDX-License-Identifier: MPL-2.0</p>
 <p >Namespace for private utilities and common functions </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a378a912513fe57d5a2f35e0cfa40631a" name="a378a912513fe57d5a2f35e0cfa40631a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a378a912513fe57d5a2f35e0cfa40631a">&#9670;&#160;</a></span>DoesMultiplicationOverflow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool utls::DoesMultiplicationOverflow </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>op1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>op2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Check if multiplying two numbers will overflow. This is crucial when calculating buffer sizes that are the product of two numbers/ </p><dl class="section return"><dt>Returns</dt><dd>true if multiplication will overflow </dd></dl>
+
+</div>
+</div>
+<a id="a970638a3c14e395c7f87922926ce0e29" name="a970638a3c14e395c7f87922926ce0e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a970638a3c14e395c7f87922926ce0e29">&#9670;&#160;</a></span>FetchImageBW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void utls::FetchImageBW </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmm_1_1OutputStream.html">mm::OutputStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>heigth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mm::PdfPixelFormat&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fxcodec::ScanlineDecoder &amp;&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const mm::charbuff &amp;&#160;</td>
+          <td class="paramname"><em>smaskData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mm::charbuff &amp;&#160;</td>
+          <td class="paramname"><em>scanLine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Fetch a black and white image and write it to the stream </p>
+
+</div>
+</div>
 <a id="a7cadd26301ce052f447a43e654689b39" name="a7cadd26301ce052f447a43e654689b39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7cadd26301ce052f447a43e654689b39">&#9670;&#160;</a></span>FetchImageGrayScale()</h2>
 
@@ -366,7 +458,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 11 2022 00:38:56 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 18 2022 00:32:40 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

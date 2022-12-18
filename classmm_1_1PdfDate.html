@@ -57,8 +57,8 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a976c9840c104b60da160c59b8184098c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfDate.html#a976c9840c104b60da160c59b8184098c">PdfDate</a> ()</td></tr>
 <tr class="separator:a976c9840c104b60da160c59b8184098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9df6296b27c4a3b4e5421a7f1576602"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfDate.html#aa9df6296b27c4a3b4e5421a7f1576602">PdfDate</a> (const std::chrono::seconds &amp;secondsFromEpoch, const nullable&lt; std::chrono::minutes &gt; &amp;offsetFromUTC)</td></tr>
-<tr class="separator:aa9df6296b27c4a3b4e5421a7f1576602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2ea306c496c91a2117fbdd2a0b513c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfDate.html#a7f2ea306c496c91a2117fbdd2a0b513c">PdfDate</a> (const std::chrono::seconds &amp;secondsFromEpoch, const nullable&lt; std::chrono::minutes &gt; &amp;minutesFromUTC)</td></tr>
+<tr class="separator:a7f2ea306c496c91a2117fbdd2a0b513c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad296d8570e2765316f72c9f9bab2ef43"><td class="memItemLeft" align="right" valign="top">const std::chrono::seconds &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfDate.html#ad296d8570e2765316f72c9f9bab2ef43">GetSecondsFromEpoch</a> () const</td></tr>
 <tr class="separator:ad296d8570e2765316f72c9f9bab2ef43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc3e9ed026ce1dc2a05a6202e368cd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmm_1_1PdfString.html">PdfString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmm_1_1PdfDate.html#a9bc3e9ed026ce1dc2a05a6202e368cd6">ToString</a> () const</td></tr>
@@ -93,12 +93,12 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Create a <a class="el" href="classmm_1_1PdfDate.html">PdfDate</a> object with the current date and time. </p>
+<p >Create a <a class="el" href="classmm_1_1PdfDate.html">PdfDate</a> with epoch time (1/1/1970 00:00:00) </p>
 
 </div>
 </div>
-<a id="aa9df6296b27c4a3b4e5421a7f1576602" name="aa9df6296b27c4a3b4e5421a7f1576602"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9df6296b27c4a3b4e5421a7f1576602">&#9670;&#160;</a></span>PdfDate() <span class="overload">[2/2]</span></h2>
+<a id="a7f2ea306c496c91a2117fbdd2a0b513c" name="a7f2ea306c496c91a2117fbdd2a0b513c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f2ea306c496c91a2117fbdd2a0b513c">&#9670;&#160;</a></span>PdfDate() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,7 +113,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const nullable&lt; std::chrono::minutes &gt; &amp;&#160;</td>
-          <td class="paramname"><em>offsetFromUTC</em>&#160;</td>
+          <td class="paramname"><em>minutesFromUTC</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -122,13 +122,12 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Create a <a class="el" href="classmm_1_1PdfDate.html">PdfDate</a> with a specified date and time </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Create a <a class="el" href="classmm_1_1PdfDate.html">PdfDate</a> with a specified date/time and offset from UTC </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>the date and time of this object</td></tr>
+    <tr><td class="paramname">secondsFromEpoch</td><td>seconds from UTC epoch (1/1/1970 00:00:00) \minutesFromUTC Offset in minutes from UTC </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>IsValid() </dd></dl>
 
 </div>
 </div>
@@ -262,7 +261,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 11 2022 00:38:55 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 18 2022 00:32:39 for pdfmm by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
